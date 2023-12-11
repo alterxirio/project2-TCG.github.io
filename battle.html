@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="background-sound" autoplay loop   src="./SOUND/y2mate.com - Wildfire.mp3"></audio>
+
+    <audio id="furinas" src="./SOUND/furina-main.mp3"></audio>
+    <audio id="nahidas" src="./SOUND/nahida-main.mp3"></audio>
+    <audio id="raidens" src="./SOUND/raiden.mp3"></audio>
+    <audio id="ventis" src="./SOUND/venti-main.mp3"></audio>
+    <audio id="zhonglis" src="./SOUND/zhongli-main.mp3"></audio>
+    <audio id="ayakas" src="./SOUND/ayaka-main.mp3"></audio>
+    <audio id="ayatos" src="./SOUND/ayato-main.mp3"></audio>
+    <audio id="dilucs" src="./SOUND/diluc-main.mp3"></audio>
+    <audio id="eulas" src="./SOUND/eula-main.mp3"></audio>
+    <audio id="hutaos" src="./SOUND/hu tao-main.mp3"></audio>
+    <audio id="xiaos" src="./SOUND/xiao-main.mp3"></audio>
+    <audio id="yaemikos" src="./SOUND/yae miko-main.mp3"></audio>
+
+    <audio id="furinain" src="./SOUND/furina-intro.mp3"></audio>
+    <audio id="nahidain" src="./SOUND/nahida-intro.mp3"></audio>
+    <audio id="raidenin" src="./SOUND/raiden1.mp3"></audio>
+    <audio id="ventiin" src="./SOUND/venti-intro.mp3"></audio>
+    <audio id="zhongliin" src="./SOUND/zhongli-intro.mp3"></audio>
+    <audio id="ayakain" src="./SOUND/yae miko-hurt.mp3"></audio>
+    <audio id="ayatoin" src="./SOUND/ayaka-intro.mp3"></audio>
+    <audio id="dilucin" src="./SOUND/diluc-intro.mp3"></audio>
+    <audio id="eulain" src="./SOUND/eula-intro.mp3"></audio>
+    <audio id="hutaoin" src="./SOUND/hu tao-intro.mp3"></audio>
+    <audio id="xiaoin" src="./SOUND/xiao-intro.mp3"></audio>
+    <audio id="yaemikoin" src="./SOUND/yae miko-intro.mp3"></audio>
+
+
+
+
+
+    <div id="main-Field" class="main-field">
+
+        
+
+
+
+        <div class="select-character">
+            <center>
+            
+            <div id="furinachar" class="character" ondblclick="selectCharacter('hydro,furina,furinachar,furinad,furinas,furinaart')" onclick="furina()">
+                <img src="./TCG CARD/furina.jpg" alt="">
+            </div>
+
+            <div id="nahidachar" class="character" ondblclick="selectCharacter('dendro,nahida,nahidachar,nahidad,nahidas,nahidaart')" onclick="nahida()">
+                <img src="./TCG CARD/nahida.jpg" alt="">
+            </div>
+
+            <div id="raidenchar" class="character" ondblclick="selectCharacter('electro,raiden,raidenchar,raidend,raidens,raidenart')" onclick="raiden()">
+                <img src="./TCG CARD/raiden.jpg" alt="">
+            </div>
+
+            <div id="ventichar" class="character" ondblclick="selectCharacter('anemo,venti,ventichar,ventid,ventis,ventiart')" onclick="venti()">
+                <img src="./TCG CARD/venti.jpg" alt="">
+            </div>
+
+            <div id="zhonglichar" class="character" ondblclick="selectCharacter('geo,zhongli,zhonglichar,zhonglid,zhonglis,zhongliart')" onclick="zhongli()">
+                <img src="./TCG CARD/zhongli.jpg" alt="">
+            </div>
+
+            <div id="ayakachar" class="character" ondblclick="selectCharacter('cryo,ayaka,ayakachar,ayakad,ayakas,ayakaart,')" onclick="ayaka()">
+                <img src="./TCG CARD/ayaka.jpg" alt="">
+            </div>
+
+            <div id="ayatochar" class="character" ondblclick="selectCharacter('hydro,ayato,ayatochar,ayatod,ayatos,ayatoart')" onclick="ayato()">
+                <img src="./TCG CARD/ayato.jpg" alt="">
+            </div>
+
+            <div id="dilucchar" class="character" ondblclick="selectCharacter('pyro,diluc,dilucchar,dilucd,dilucs,dilucart')" onclick="diluc()">
+                <img src="./TCG CARD/diluc.jpg" alt="">
+            </div>
+
+            <div id="eulachar" class="character" ondblclick="selectCharacter('cryo,eula,eulachar,eulad,eulas,eulaart')" onclick="eula()">
+                <img src="./TCG CARD/eula.jpg" alt="">
+            </div>
+
+            <div id="hutaochar" class="character" ondblclick="selectCharacter('pyro,hutao,hutaochar,hutaod,hutaos,hutaoart')" onclick="hutao()">
+                <img src="./TCG CARD/hu tao.jpg" alt="">
+            </div>
+
+            <div id="xiaochar" class="character" ondblclick="selectCharacter('anemo,xiao,xiaochar,xiaod,xiaos,xiaoart')" onclick="xiao()">
+                <img src="./TCG CARD/xiao.jpg" alt="">
+            </div>
+
+            <div id="yaemikochar" class="character" ondblclick="selectCharacter('electro,yaemiko,yaemikochar,yaemikod,yaemikos,yaemikoart')" onclick="yaemiko()">
+                <img src="./TCG CARD/yae miko.jpg" alt="">
+            </div>
+
+
+        </center>
+
+        </div>
+
+        <div class="display-card">
+
+            <p id="firstpick"> YOUR CARD</p>
+
+            <div id="furinad" class="card">
+                <img src="./TCG CARD/furina.jpg" alt="">
+            </div>
+
+            <div id="nahidad" class="card">
+                <img src="./TCG CARD/nahida.jpg" alt="">
+            </div>
+
+            <div id="raidend" class="card" >
+                <img src="./TCG CARD/raiden.jpg" alt="">
+            </div>
+
+            <div id="ventid" class="card">
+                <img src="./TCG CARD/venti.jpg" alt="">
+            </div>
+
+            <div id="zhonglid" class="card">
+                <img src="./TCG CARD/zhongli.jpg" alt="">
+            </div>
+
+            <div id="ayakad" class="card">
+                <img src="./TCG CARD/ayaka.jpg" alt="">
+            </div>
+
+            <div id="ayatod" class="card">
+                <img src="./TCG CARD/ayato.jpg" alt="">
+            </div>
+
+            <div id="dilucd" class="card">
+                <img src="./TCG CARD/diluc.jpg" alt="">
+            </div>
+
+            <div id="eulad" class="card">
+                <img src="./TCG CARD/eula.jpg" alt="">
+            </div>
+
+            <div id="hutaod" class="card">
+                <img src="./TCG CARD/hu tao.jpg" alt="">
+            </div>
+
+            <div id="xiaod" class="card">
+                <img src="./TCG CARD/xiao.jpg" alt="">
+            </div>
+            
+            <div id="yaemikod" class="card">
+                <img src="./TCG CARD/yae miko.jpg" alt="">
+            </div>
+
+
+            <p id="secondpick">ENEMY CARD</p>
+
+
+
+
+            <!-- enemydisplay -->
+            <div id="furinacd" class="card enemy">
+                <img src="./TCG CARD/furina.jpg" alt="">
+            </div>
+
+            <div id="nahidacd" class="card enemy">
+                <img src="./TCG CARD/nahida.jpg" alt="">
+            </div>
+
+            <div id="raidencd" class="card enemy">
+                <img src="./TCG CARD/raiden.jpg" alt="">
+            </div>
+
+            <div id="venticd" class="card enemy">
+                <img src="./TCG CARD/venti.jpg" alt="">
+            </div>
+
+            <div id="zhonglicd" class="card enemy">
+                <img src="./TCG CARD/zhongli.jpg" alt="">
+            </div>
+
+            <div id="ayakacd" class="card enemy">
+                <img src="./TCG CARD/ayaka.jpg" alt="">
+            </div>
+
+            <div id="ayatocd" class="card enemy">
+                <img src="./TCG CARD/ayato.jpg" alt="">
+            </div>
+
+            <div id="diluccd" class="card enemy">
+                <img src="./TCG CARD/diluc.jpg" alt="">
+            </div>
+
+            <div id="eulacd" class="card enemy">
+                <img src="./TCG CARD/eula.jpg" alt="">
+            </div>
+
+            <div id="hutaocd" class="card enemy">
+                <img src="./TCG CARD/hu tao.jpg" alt="">
+            </div>
+
+            <div id="xiaocd" class="card enemy">
+                <img src="./TCG CARD/xiao.jpg" alt="">
+            </div>
+
+            <div id="yaemikocd" class="card enemy">
+                <img src="./TCG CARD/yae miko.jpg" alt="">
+            </div>
+
+        </div>
+
+            
+        <div id="Enemy-field" class="enemy-field enemy">
+
+
+                <div class="enemytop ">
+
+                    <div id="enemyhealth-bar">
+                        <div id="enemyhealth"> <p id="enemyhealthpercent">100%</p> </div>
+                    </div>  
+
+                </div>
+
+                <div  class="enemybottom">
+
+
+                        <div id="furinac" class="card enemy">
+                            <img src="./TCG CARD/furina.jpg" alt="">
+                        </div>
+    
+                        <div id="nahidac" class="card enemy">
+                            <img src="./TCG CARD/nahida.jpg" alt="">
+                        </div>
+    
+                        <div id="raidenc" class="card enemy">
+                            <img src="./TCG CARD/raiden.jpg" alt="">
+                        </div>
+
+                        <div id="ventic" class="card enemy">
+                            <img src="./TCG CARD/venti.jpg" alt="">
+                        </div>
+
+                        <div id="zhonglic" class="card enemy">
+                            <img src="./TCG CARD/zhongli.jpg" alt="">
+                        </div>
+
+                        <div id="ayakac" class="card enemy">
+                            <img src="./TCG CARD/ayaka.jpg" alt="">
+                        </div>
+            
+                        <div id="ayatoc" class="card enemy">
+                            <img src="./TCG CARD/ayato.jpg" alt="">
+                        </div>
+            
+                        <div id="dilucc" class="card enemy">
+                            <img src="./TCG CARD/diluc.jpg" alt="">
+                        </div>
+            
+                        <div id="eulac" class="card enemy">
+                            <img src="./TCG CARD/eula.jpg" alt="">
+                        </div>
+            
+                        <div id="hutaoc" class="card enemy">
+                            <img src="./TCG CARD/hu tao.jpg" alt="">
+                        </div>
+            
+                        <div id="xiaoc" class="card enemy">
+                            <img src="./TCG CARD/xiao.jpg" alt="">
+                        </div>
+            
+                        <div id="yaemikoc" class="card enemy">
+                            <img src="./TCG CARD/yae miko.jpg" alt="">
+                        </div>
+    
+                </div>
+
+
+
+         </div>
+
+
+
+            
+            <button id="fightbutton" onclick="fight()">BASIC ATTACK</button>
+            <button id="ultimate" onclick="ultimate()">ULTIMATE</button>
+            <button id="next" onclick="nextRound()"> NEXT ROUND </button>
+            <center>
+
+            <div class="elemental-burst burst ">
+    
+                <div id="furinaart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/furina splash.webp" alt="">
+                </div>
+
+                <div id="nahidaart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/nahida splash.webp" alt="">
+                </div>
+
+                <div id="raidenart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/raiden splash.webp" alt="">
+                </div>
+
+                <div id="ventiart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/venti splash.webp" alt="">
+                </div>
+
+                <div id="zhongliart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/zhongli_030_gacha_splash.webp" alt="">
+                </div>
+
+                <div id="ayakaart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/ayaka_002_gacha_splash.webp" alt="">
+                </div>
+
+                <div id="ayatoart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/ayato_066_gacha_splash.webp" alt="">
+                </div>
+
+                <div id="dilucart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/diluc_016_gacha_splash.webp" alt="">
+                </div>
+
+                <div id="eulaart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/eula_051_gacha_splash.webp" alt="">
+                </div>
+
+                <div id="hutaoart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/hutao_046_gacha_splash.webp" alt="">
+                </div>
+
+                <div id="xiaoart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/xiao_026_gacha_splash.webp" alt="">
+                </div>
+
+                <div id="yaemikoart" class="char-ultimate portrait">
+                    <img src="./SPLASH ART/yae_058_gacha_splash.webp" alt="">
+                </div>
+    
+            </div>
+    
+            </center>
+        
+        
+                 
+            
+        
+        <div id="User-field" class="user-field">
+
+            <div class="top oportrait">
+
+
+                <div id="furina" class="card user">
+                    <img src="./TCG CARD/furina.jpg" alt="">
+                </div>
+
+                <div id="nahida" class="card user">
+                    <img src="./TCG CARD/nahida.jpg" alt="">
+                </div>
+
+                <div id="raiden" class="card user" >
+                    <img src="./TCG CARD/raiden.jpg" alt="">
+                </div>
+
+                <div id="venti" class="card user">
+                    <img src="./TCG CARD/venti.jpg" alt="">
+                </div>
+
+                <div id="zhongli" class="card user">
+                    <img src="./TCG CARD/zhongli.jpg" alt="">
+                </div>
+
+                <div id="ayaka" class="card user">
+                    <img src="./TCG CARD/ayaka.jpg" alt="">
+                </div>
+    
+                <div id="ayato" class="card user">
+                    <img src="./TCG CARD/ayato.jpg" alt="">
+                </div>
+    
+                <div id="diluc" class="card user">
+                    <img src="./TCG CARD/diluc.jpg" alt="">
+                </div>
+    
+                <div id="eula" class="card user">
+                    <img src="./TCG CARD/eula.jpg" alt="">
+                </div>
+    
+                <div id="hutao" class="card user">
+                    <img src="./TCG CARD/hu tao.jpg" alt="">
+                </div>
+    
+                <div id="xiao" class="card user">
+                    <img src="./TCG CARD/xiao.jpg" alt="">
+                </div>
+    
+                <div id="yaemiko" class="card user">
+                    <img src="./TCG CARD/yae miko.jpg" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="bottom">
+        
+                <div id="health-bar">
+                    <div id="health"> <p id="healthpercent">100%</p> </div>
+                </div>
+
+            </div>
+
+        </div>
+
+       
+    </div>
+</body>
+<script>
+
+    let i = 0;
+    let g = 0
+
+    let char1
+    let char2
+    let char3
+    let char4
+
+    let enemy1
+    let enemy2
+
+    let sound1
+    let sound2
+
+    let art1
+    let art2
+
+    let elem1
+    let elem2
+
+    let isUserTurn 
+    isUserTurn = true
+
+
+    let mainField = document.getElementById("main-Field")
+    let Userfield = document.getElementById("User-field")
+    let Enemyfield = document.getElementById("Enemy-field")
+
+
+
+    const enemySelection1 = ['nahidac','furinac','raidenc','ventic','zhonglic','ayakac']
+    const enemyDisplay1 = ['nahidacd','furinacd','raidencd','venticd','zhonglicd','ayakacd']
+    const element1 = ['dendro','hydro','electro','anemo','geo','cryo']
+    const randm1 = Math.floor(Math.random() *6 )
+    let currentEnemy1 = enemySelection1[randm1]
+    let currentElement1 = element1[randm1]
+    let currentDisplay1 = enemyDisplay1[randm1]
+
+    // currentEnemy1.style.display = "block"
+
+    console.log(randm1)
+
+
+
+    const enemySelection2 = ['ayatoc','dilucc','eulac','hutaoc','xiaoc','yaemikoc']
+    const element2 = ['hydro','pyro','cryo','pyro','anemo','electro']
+    const enemyDisplay2 = ['ayatocd','diluccd','eulacd','hutaocd','xiaocd','yaemikocd']
+    const randm2 = Math.floor(Math.random() *6 )
+    let currentEnemy2 = enemySelection2[randm2]
+    let currentElement2 = element2[randm2]
+    let currentDisplay2 = enemyDisplay2[randm2]
+
+    console.log(randm2)
+
+
+    
+    let fightButton = document.getElementById("fightbutton")
+    let ifsecondPhase
+
+    let firstPick = document.getElementById("firstpick")
+    let secondPick = document.getElementById("secondpick")
+    let Ultimate = document.getElementById("ultimate")
+
+
+    k = 1
+    m = --k
+    
+
+
+
+    let healthBar = document.getElementById("health-bar")
+    let health = document.getElementById("health")
+    let healthPercent = document.getElementById("healthpercent")
+    health = 100
+
+
+    let enemyhealthBar = document.getElementById("enemyhealth-bar")
+    let enemyhealth = document.getElementById("enemyhealth")
+    let enemyhealthPercent = document.getElementById("enemyhealthpercent")
+    enemyhealth = 100
+
+    let next = document.getElementById("next")
+    next.style.display = "none"
+
+    fightButton.style.display = "none"
+    healthBar.style.display = "none"
+    enemyhealthBar.style.display = "none"
+    Ultimate.style.display = "none"
+
+    let z = 0
+    let t = 0
+    let EnemyUltimateAttack = 0
+
+    
+    document.querySelectorAll(".card").forEach(function(element){
+            element.style.display = "none";
+     })
+
+     document.querySelectorAll(".char-ultimate").forEach(function(element){
+            element.style.display = "none";
+     })
+
+    let displayEnemy1 = document.getElementById(currentDisplay1)
+    displayEnemy1.style.display = "block"
+
+    let displayEnemy2 = document.getElementById(currentDisplay2)
+    displayEnemy2.style.display = "block"
+
+    let selectedCharacter;
+
+
+    let Furina = document.getElementById("furinain")
+    let Nahida = document.getElementById("nahidain")
+    let Raiden = document.getElementById("raidenin")
+    let Venti = document.getElementById("ventiin")
+    let Zhongli = document.getElementById("zhongliin")
+    let Ayaka = document.getElementById("ayakain")
+    let Ayato = document.getElementById("ayatoin")
+    let Diluc = document.getElementById("dilucin")
+    let Eula = document.getElementById("eulain")
+    let Hutao = document.getElementById("hutaoin")
+    let Xiao = document.getElementById("xiaoin")
+    let Yaemiko = document.getElementById("yaemikoin")
+
+    let backgroundSound = document.getElementById("background-sound")
+    backgroundSound.volume = 0.3
+
+
+
+    
+
+    
+    
+
+
+    function selectCharacter(char){
+        i++
+        let card = document.getElementById("card")
+        let cards = document.querySelectorAll("card")
+        var [element,character,select,display,sound,art] = char.split(',')
+
+        console.log(i)
+        if(i === 1){
+
+            char1 = character
+            elem1 = element
+            sound1 = sound
+            art1 = art
+            let userSound1 = document.getElementById(sound1)
+            let userArt1 = document.getElementById(art1)
+            let select1 = document.getElementById(select)
+            let char3 = document.getElementById(char1)
+            display1 = document.getElementById(display)
+            console.log("char1", char1)
+            console.log("elem1", elem1)
+            select1.style.display = "none"
+            display1.style.display = "block"
+
+
+            
+        }
+        if(i === 2){
+
+            char2 = character
+            elem2 = element
+            sound2 = sound
+            art2 = art
+            display2 = document.getElementById(display)
+            let userSound2 = document.getElementById(sound2)
+            let userArt2 = document.getElementById(art2)
+            let select2 = document.getElementById(select)
+            let char4 = document.getElementById(char2)
+            select2.style.display = "none"
+            display2.style.display = "block"
+            
+
+            setTimeout(() => {
+
+                console.log("char2", char2)
+                console.log("elem2", element)
+
+                document.querySelectorAll(".card").forEach(function(element){
+                element.style.display = "none";
+                })
+
+                document.querySelectorAll(".select-character").forEach(function(element){
+                element.style.display = "none";
+                })
+
+                fightButton.style.display = "block"
+                healthBar.style.display = "block"
+                enemyhealthBar.style.display = "block"
+                firstPick.style.display = "none"
+                secondPick.style.display = "none"
+
+                firstPhase()
+
+            } , 3000)
+
+
+        }
+
+        
+    }
+
+
+
+    function enemyCard1(){
+        
+       
+        console.log("enemy1", currentEnemy1)
+        console.log(randm1)
+        enemy1 = document.getElementById(currentEnemy1)
+        enemy1.style.display ="block"
+        
+
+    }
+
+
+
+    function enemyCard2(){
+
+        enemyCard1()
+       
+        console.log("enmey2",currentEnemy2)
+        console.log(randm2)
+        enemy2 = document.getElementById(currentEnemy2)
+        enemy1 = document.getElementById(currentEnemy1)
+
+        enemy2.style.display ="block"
+        enemy1.style.display = "none"
+        
+
+    }
+
+
+
+
+
+    function firstPhase(){
+        let char3 = document.getElementById(char1)
+        char3.style.display = "block"
+
+        
+
+        enemyCard1()
+
+    }
+
+
+
+    function secondPhase(){
+        enemyCard2()
+         char3 = document.getElementById(char1)
+        let char4 = document.getElementById(char2)
+        let fightButton = document.getElementById("fightbutton")
+
+        char4.style.display = "block"
+
+        char3.style.display = "none"
+
+        fightButton.style.display = "block"
+
+    }
+
+    function element(){
+
+        if ( z == 0){
+
+            if(elem1 === currentElement1){
+                enemyattack = 8
+                userAttack = 10
+            }
+
+            // userreaction
+
+            // userswirl
+            if(elem1 === 'anemo' ){
+                enemyattack = 8
+                userAttack = 12
+            }
+
+            // usercyrstalize
+            if(elem1 ===  'geo'){
+                enemyattack = 5
+                userAttack = 10
+            }
+
+            // userelectocharged&&vaporized&&supercondact
+            if( elem1 === 'electro' &&  currentElement1 == 'hydro' || elem1 === 'hydro' && currentElement1 == 'pyro' || elem1 === 'electro' && currentElement1 == 'cryo' ){
+                enemyattack = 5
+                userAttack = 8
+            }
+
+            // usermelt&&forzen
+            if( elem1 === 'pyro' && currentElement1 == 'cryo' || elem1 == 'cryo' && currentEnemy1 == 'hydro' ){
+                enemyattack = 5
+                userAttack = 12
+            }
+
+            //  useroverload&&compoverload
+            if(elem1 == 'electro' && currentElement1 == 'pyro' || elem1 == 'pyro' && currentElement1 == 'electro'){
+                enemyattack = 15
+                userAttack = 17
+            }
+
+            // userburning&&userbloom
+            if(elem1 == 'pyro' && currentElement1 == 'dendro' || elem1 == 'dendro' && currentElement1 == 'hydro'){
+                enemyattack = 10
+                userAttack = 17
+            }
+
+            // userquicken
+            if(elem1 == 'electro' && currentElement1 == 'dendro' || elem1 == 'dendro' && currentElement1 == 'hydro'){
+                enemyattack = 8
+                userAttack = 12
+            }
+
+
+            // enemyreaction
+
+            // enemyswirl
+            if( currentElement1==  'anemo' ){
+                enemyattack = 12
+                userAttack = 8
+            }
+
+            // enemycyrstalize
+            if( currentElement1 ==  'geo'){
+                enemyattack = 5
+                userAttack = 10
+            }
+
+            // enemyelectocharged&&vaporized&&supercondact
+            if( elem1 === 'hydro' &&  currentElement1 == 'electro' || elem1 === 'pyro' && currentElement1 == 'hydro' || elem1 === 'cryo' && currentElement1 == 'electro' ){
+                enemyattack = 8
+                userAttack = 5
+            }
+
+            // enemyrmelt&&forzen
+            if( elem1 === 'cryo' && currentElement1 == 'pyro' || elem1 == 'hydro' && currentEnemy1 == 'cryo' ){
+                enemyattack = 12
+                userAttack = 5
+            }
+
+
+            // enemyburning&&userbloom
+            if(elem1 == 'dendro' && currentElement1 == 'pyro' || elem1 == 'hydro' && currentElement1 == 'dendro'){
+                enemyattack = 17
+                userAttack = 10
+            }
+
+            // enemyquicken
+            if(elem1 == 'dendro' && currentElement1 == 'electro' || elem1 == 'hydro' && currentElement1 == 'dendro'){
+                enemyattack = 12
+                userAttack = 8
+            }
+
+
+        }
+
+
+
+        if ( z == 1){
+
+            if(elem2 == currentElement2){
+                enemyattack = 8
+                userAttack = 10
+            }
+
+            // userreaction
+
+            // userswirl
+            if(elem2 ==  'anemo' ){
+                enemyattack = 8
+                userAttack = 12
+            }
+
+            // usercyrstalize
+            if(elem2 ==  'geo'){
+                enemyattack = 5
+                userAttack = 10
+            }
+
+            // userelectocharged&&vaporized&&supercondact
+            if( elem2 === 'electro' &&  currentElement2 == 'hydro' || elem2 === 'hydro' && currentElement2 == 'pyro' || elem2 === 'electro' && currentElement2 == 'cryo' ){
+                enemyattack = 5
+                userAttack = 8
+            }
+
+            // usermelt&&forzen
+            if( elem2 === 'pyro' && currentElement2 == 'cryo' || elem2 == 'cryo' && currentEnemy2 == 'hydro' ){
+                enemyattack = 5
+                userAttack = 12
+            }
+
+            //  useroverload&&compoverload
+            if(elem2 == 'electro' && currentElement2 == 'pyro' || elem2 == 'pyro' && currentElement2 == 'electro'){
+                enemyattack = 15
+                userAttack = 17
+            }
+
+            // userburning&&userbloom
+            if(elem2 == 'pyro' && currentElement2 == 'dendro' || elem2 == 'dendro' && currentElement2 == 'hydro'){
+                enemyattack = 10
+                userAttack = 17
+            }
+
+            // userquicken
+            if(elem2 == 'electro' && currentElement2 == 'dendro' || elem2 == 'dendro' && currentElement2 == 'hydro'){
+                enemyattack = 8
+                userAttack = 12
+            }
+
+
+            // enemyreaction
+
+            // enemyswirl
+            if( currentElement2 ==  'anemo' ){
+                enemyattack = 12
+                userAttack = 8
+            }
+
+            // enemycyrstalize
+            if( currentElement2 ==  'geo'){
+                enemyattack = 5
+                userAttack = 10
+            }
+
+            // enemyelectocharged&&vaporized&&supercondact
+            if( elem2 === 'hydro' &&  currentElement2 == 'electro' || elem2 === 'pyro' && currentElement2 == 'hydro' || elem2 === 'electro' && currentElement2 == 'cryo' ){
+                enemyattack = 8
+                userAttack = 5
+            }
+
+            // enemyrmelt&&forzen
+            if( elem2 === 'cryo' && currentElement2 == 'pyro' || elem2 == 'hydro' && currentEnemy2 == 'cryo' ){
+                enemyattack = 12
+                userAttack = 5
+            }
+
+
+            // enemyburning&&userbloom
+            if(elem2 == 'dendro' && currentElement2 == 'pyro' || elem2 == 'hydro' && currentElement2 == 'dendro'){
+                enemyattack = 17
+                userAttack = 10
+            }
+
+            // enemyquicken
+            if(elem2 == 'dendro' && currentElement2 == 'electro' || elem2 == 'hydro' && currentElement2 == 'dendro'){
+                enemyattack = 12
+                userAttack = 8
+            }
+
+
+
+        }
+
+
+    }
+
+    
+   
+    
+    
+    
+   
+
+
+    function fight(){
+        
+        element()
+        let i 
+        let userAttack = 12;
+        let enemyattack = 8 ;
+        let userAttack2 ;
+        let enemyattack2 ;
+        j = 2
+        a = --j
+        let userRandomAttack = Math.floor(Math.random()* 5 + 1)
+        let char3 = document.getElementById(char1)
+        let char4 = document.getElementById(char2)
+
+        enemy1 = document.getElementById(currentEnemy1)
+        enemy2 = document.getElementById(currentEnemy2)
+        g++
+        EnemyUltimateAttack++
+        
+        Ultimate.style.display = "none"
+
+
+        
+        if( health > 0 || enemyhealth > 0){
+
+            
+
+            if(isUserTurn === true){
+
+                
+                let enemydamage = enemyhealth -= userAttack 
+                enemyhealthPercent.innerHTML = enemydamage
+                enemyhealthBar.style.width = enemyhealth + "%"
+                console.log("testm",a)
+                fightButton.style.display = "none"
+                char3.style.marginBottom = "30px"
+                enemy1.style.marginTop = "0px"
+                char4.style.marginBottom = "30px"
+                enemy2.style.marginTop = "0px"
+                isUserTurn = false
+                
+
+                
+
+
+            }
+
+            if(isUserTurn === false){
+                a = 2
+                
+                setTimeout(() => {
+
+                char3.style.marginBottom = "0px"
+                enemy1.style.marginTop = "20px"
+                char4.style.marginBottom = "0px"
+                enemy2.style.marginTop = "20px"  
+                
+                healthBar.style.width = health + '%';
+                let userdamage = health -=  enemyattack 
+                healthPercent.innerHTML = userdamage
+                isUserTurn = false
+                a--
+                console.log("test2j",a)
+                fightButton.style.display = "block"
+                isUserTurn = true
+
+                
+                if(g >= 4){
+                    Ultimate.style.display = "block"
+                 }
+
+                } , 2000)
+
+
+
+
+            }
+
+         
+
+        }
+
+
+        // if(EnemyUltimateAttack == 6){
+
+        //     let ulti = enemyattack += 10 
+        //     fightButton.style.display = "none"           
+        //     setTimeout(() => {
+
+        //         char3.style.marginBottom = "0px"
+        //         enemy1.style.marginTop = "20px"
+        //         char4.style.marginBottom = "0px"
+        //         enemy2.style.marginTop = "20px"  
+
+        //         healthBar.style.width = health + '%';
+        //         let userdamage = health -=  ulti
+        //         healthPercent.innerHTML = userdamage
+        //         isUserTurn = true
+        //         fightButton.style.display = "block"           
+
+
+        //     } , 2000)
+            
+        // }
+
+
+        if(health < 0 || health == 0){
+
+            enemyhealth = 0
+            health = 0
+            console.log(health)
+            healthPercent.innerHTML = "YOU DIE";
+            enemyhealthPercent.innerHTML = "ENEMY WIN";
+            healthBar.style.width = 100 + '%';
+            enemyhealthBar.style.width = 100 + '%';
+            z++
+
+
+                
+            if(m == 0){
+
+                enemyhealth = 0
+                health = 0
+                health = 100 
+                enemyhealth = 100 
+                g = 0
+                fightButton.style.display = "none"
+                EnemyUltimateAttack = 0
+                setTimeout(nextRound, 2000)
+                m--
+
+                    
+            }
+           
+         }
+
+         if(enemyhealth < 0 || enemyhealth == 0){
+           
+            enemyhealth = 0
+            health = 0
+            console.log(enemyhealth)
+            enemyhealthPercent.innerHTML = "ENEMY DIED";
+            healthPercent.innerHTML = "YOU WIN";
+            healthBar.style.width = 100 + '%';
+            enemyhealthBar.style.width = 100 + '%';
+            z++
+            t++
+
+        
+                
+            if(m == 0){
+
+                enemyhealth = 0
+                health = 0
+                health = 100 
+                enemyhealth = 100 
+                g = 0
+                fightButton.style.display = "none";
+                EnemyUltimateAttack = 0
+                setTimeout(nextRound, 2000)
+                m--
+                t++
+
+                    
+            }
+
+            
+
+        }
+
+
+    }
+
+
+    function ultimate(){
+
+        element()
+        let i 
+        let userAttack = 15 ;
+        j = 2
+        a = --j
+        let userUltimateAttack = Math.floor(Math.random()* 5 + 1)
+        let EnemyUltimateAttack = Math.floor(Math.random()* 5 + 1)
+
+        let char3 = document.getElementById(char1)
+        let char4 = document.getElementById(char2)
+
+        enemy1 = document.getElementById(currentEnemy1)
+        enemy2 = document.getElementById(currentEnemy2)
+
+        userSound1 = document.getElementById(sound1)
+        userArt1 = document.getElementById(art1)
+
+        userSound2 = document.getElementById(sound2)
+        userArt2 = document.getElementById(art2)
+
+        
+        if( health > 0){ 
+
+            if( g >= 4 ){
+
+                if (z == 0){
+
+                    Ultimate.style.display = "none"
+                    fightButton.style.display = "none"
+                    Userfield.style.display = "none"
+                    Enemyfield.style.display = "none"
+                    mainField.style.backgroundColor = "rgba(0,0,0,0.8)"
+                    userArt1.style.display = "block"
+                    userSound1.play()
+
+                }
+
+                if(z == 1 ){
+
+                    Ultimate.style.display = "none"
+                    fightButton.style.display = "none"
+                    mainField.style.backgroundColor = "rgba(0,0,0,0.8)"
+                    userArt2.style.display = "block"
+                    fightButton.style.display = "none"
+                    Userfield.style.display = "none"
+                    Enemyfield.style.display = "none"
+                    userSound2.play()
+
+                }
+                
+                setTimeout(() => {
+                
+                let enemydamage = enemyhealth -= userAttack 
+                enemyhealthPercent.innerHTML = enemydamage
+                enemyhealthBar.style.width = enemyhealth + "%"
+                console.log("testm",a)
+                fightButton.style.display = "block"
+                Userfield.style.display = "block"
+                Enemyfield.style.display = "block"
+                mainField.style.backgroundColor = ""
+                userArt1.style.display = "none"
+                userArt2.style.display = "none"
+
+                g = 0
+                
+
+                },3000)
+
+            }
+
+
+         
+
+         }
+
+
+
+    }
+
+    function nextRound(){
+
+        next.style.display = "none"
+        healthPercent.innerHTML = health;
+        enemyhealthPercent.innerHTML = enemyhealth;
+        health = 100
+        enemyhealth = 100
+       
+        secondPhase()
+
+    }
+
+    
+    function furina(){
+        Furina.play()
+    }
+    
+    function nahida(){
+        Nahida.play()
+    }
+
+    function raiden(){
+        Raiden.play()
+    }
+
+    function venti(){
+        Venti.play()
+    }
+
+    function zhongli(){
+        Zhongli.play()
+    }
+
+    function ayaka(){
+        Ayaka.play()
+    }
+
+    function ayato(){
+        Ayato.play()
+    }
+
+    function diluc(){
+        Diluc.play()
+    }
+
+    function eula(){
+        Eula.play()
+    }
+
+    function hutao(){
+        Hutao.play()
+    }
+
+    function xiao(){
+        Xiao.play()
+    }
+
+    function yaemiko(){
+        Yaemiko.play()
+    }
+
+    
+
+
+   
+    
+
+
+
+</script>
+</html>
